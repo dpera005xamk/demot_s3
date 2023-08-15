@@ -4,6 +4,11 @@
 - EJS perusteet, tekee prismasta haettuna ostoslistan.
 - Material design litestä tyylit.
 
+# demo 2
+- sama kuin edellinen, mutta tulee formit (ja linkit) myös mukaan.
+
+# demo 3
+
 
 # muita noteja:
 

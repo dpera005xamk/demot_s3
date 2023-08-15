@@ -63,23 +63,32 @@
 
         <li class="mdl-list__item">
             <span class="mdl-list__item-primary-content">
-                <a href="/poimittu/?id=<%=ostos.id%>&poimittu=<%=ostos.poimittu%>">
+                <a href="/poimittu/?id=<%=ostos.id%>&poimittu=<%=ostos.poimittu%>"> <!-- Tässä tehdään linkki, millä muutetaan poimittua! -->
                 <% if (ostos.poimittu) {%>
                 <i class="material-icons">check_box</i>
                 <% } else { %>
-                <i class="material-icons">check_box_outline_blank</i>
+                <i class="material-icons">check_box_outline_blank</i> <!-- stylesissä oli review icons Material Icons Library-->
                 <% } %>
                 </a>
                 <span>
                     <%= ostos.tuote %>
                 </span>
             </span>
+
+            <!-- 
+
+                GET tai POST, näissä formeissa. Niiden ero on, että jos käytetään GET niin tiedot näkyy osoterivillä
+
+            -->
+
             <form method="POST" action="/poista">
 
+                <!-- input type hidden: voit määritellä tänne valueen tuo ostos.id, niin sieltä sitä voi sitten käyttää-->
                 <input type="hidden" name="id" value="<%= ostos.id %>">
 
+                <!-- button määrittele submitiksi -->
                 <button type="submit" class="mdl-button mdl-js-button mdl-button--icon mdl-list__item-secondary-action">
-                    <i class="material-icons">delete</i>
+                    <i class="material-icons">delete</i> 
                 </button>
             </form>
         </li>
@@ -88,9 +97,10 @@
 
     </ul>
 
-    <form method="POST" action="/">
+    <form method="POST" action="/"> <!--  action on se kohde, eli mihin tulee. ei ole pakko määrittää, mutta olisi hyvä -->
 
         <div class="mdl-textfield">
+            <!-- huom, pitää nimetä, eli niin kuin tässä on tuote nimenä, niin tämä tekee esim. {"tuote":"tähän se mitä syötetty"}-->
             <input class="mdl-textfield__input" type="text" name="tuote" placeholder="Kirjoita tuote...">
         </div>
 
