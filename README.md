@@ -8,7 +8,8 @@
 - sama kuin edellinen, mutta tulee formit (ja linkit) myös mukaan.
 
 # demo 3
-
+- kuvagalleria demo. tiedostojen upload.
+- tyylejä sisäisesti, includen käyttö
 
 # muita noteja:
 

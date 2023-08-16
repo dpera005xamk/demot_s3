@@ -1,14 +1,17 @@
 import express from "express";
 import { PrismaClient } from "@prisma/client";
 import path from "path";
-import multer from "multer";
+import multer from "multer"; // kun käytetään multiform part form tapaa npm install npm install multer
+                            // npm install --save-dev @types/multer
 import fs from "fs/promises";
+
+// Jatka: Video 20:38!
 
 const app : express.Application = express();
 const prisma : PrismaClient = new PrismaClient();
 
-const uploadKasittelija : express.RequestHandler = multer({ 
-    dest : path.resolve(__dirname, "tmp"),
+const uploadKasittelija : express.RequestHandler = multer({  // multerin ilmentymä
+    dest : path.resolve(__dirname, "tmp"), // mihin menee
     limits : {
         fileSize : (1024 * 500)
     },
@@ -33,6 +36,13 @@ const portti : number = Number(process.env.PORT) || 3003;
 
 app.set("view engine", "ejs");
 
+// määritellään staattisten tiedostojen kansio
+// sinne css, fonts ja img
+// niihin kopioitu nuo tyylit ja fontit, eli ne on sitten paikallisesti siellä.
+// npm install @fontsource/material-icons @fontsource/roboto
+// ne menee sillä node_modulesiin, ja sinne voi viitata, mutta voit kopioida ne sieltä ja laittaa
+// tonne fonts kansioon. sitten voi viitata "fonts/roboto/index.css" jne.
+// css voit tehdä vaikka sit styles.css ja sinne sisällöksi, mitä olisi stylesissä
 app.use(express.static(path.resolve(__dirname, "public")));
 
 app.post("/lisaa", async (req : express.Request, res : express.Response ) => {

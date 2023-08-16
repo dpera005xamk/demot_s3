@@ -8,7 +8,7 @@
 
     <% } %>
 
-    <form method="POST" action="/lisaa" enctype="multipart/form-data">
+    <form method="POST" action="/lisaa" enctype="multipart/form-data"> <!-- kun file mukana, niin pitää pistää tuo enctype-->
 
         <div class="mdl-textfield">
             <input class="mdl-textfield__input" type="text" name="teksti" id="teksti" value="<%=teksti%>">
@@ -16,7 +16,7 @@
         </div>
 
         <div class="mdl-textfield">
-            <input class="mdl-textfield__input" type="file" name="tiedosto" id="tiedosto">
+            <input class="mdl-textfield__input" type="file" name="tiedosto" id="tiedosto"> <!-- huom. type= file-->
             <label class="mdl-textfield__label" for="tiedosto">Tiedosto</label>            
         </div>
 
