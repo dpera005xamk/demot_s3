@@ -2,16 +2,16 @@
 
     <h2>Lisää uusi kuva galleriaan</h2>
 
-    <% if (Boolean(virhe)) { %>
+    <% if (Boolean(virhe)) { %> <!-- käsittelijä virhe ilmotukselle, eli jos siellä "virhe" objekti tulee, niin tämä aktivoituu-->
 
-        <div class="virhe"><%=virhe%></div>
+        <div class="virhe"><%=virhe%></div>  <!-- pitää lisätä arvot tälle ja tekstille, vaikka "", että voi käyttää-->
 
     <% } %>
 
     <form method="POST" action="/lisaa" enctype="multipart/form-data"> <!-- kun file mukana, niin pitää pistää tuo enctype-->
 
         <div class="mdl-textfield">
-            <input class="mdl-textfield__input" type="text" name="teksti" id="teksti" value="<%=teksti%>">
+            <input class="mdl-textfield__input" type="text" name="teksti" id="teksti" value="<%=teksti%>"> <!-- nyt kun täällä tuo teksti, niin saadaan se säilytettyä käyttäjälle-->
             <label class="mdl-textfield__label" for="teksti">Kuvateksti</label>            
         </div>
 
