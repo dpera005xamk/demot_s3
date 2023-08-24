@@ -5,8 +5,6 @@ import multer from "multer"; // kun käytetään multiform part form tapaa npm i
                             // npm install --save-dev @types/multer
 import fs from "fs/promises"; // file systemin promise versio, että toimii async
 
-// Jatka: Video 20:38!
-
 const app : express.Application = express();
 const prisma : PrismaClient = new PrismaClient();
 

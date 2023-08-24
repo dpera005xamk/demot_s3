@@ -17,7 +17,7 @@ Material design lite: https://getmdl.io/
 mdi iconit: https://fonts.google.com/icons?selected=Material+Icons:arrow_circle_up:
 
 tuosta käyntiin:
-
+npm init
 npm install typescript @types/node ts-node nodemon --save-dev
 npm install @types/express --save-dev
 npm install express
