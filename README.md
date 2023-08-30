@@ -11,6 +11,10 @@
 - kuvagalleria demo. tiedostojen upload.
 - tyylejä sisäisesti, includen käyttö
 
+# demo 4
+- react native
+
+
 # muita noteja:
 
 Material design lite: https://getmdl.io/
