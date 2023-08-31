@@ -12,7 +12,15 @@
 - tyylejä sisäisesti, includen käyttö
 
 # demo 4
-- react native
+- react native, hello world
+
+# demo 5
+- näyttää laitteen ja akun tietoja
+- react native, laite komponentteja.
+- react native paper - mdl kirjasto.
+
+# demo 6
+- kameran käyttö sovelluksessa. appi, joka ottaa kuvan ja näyttää sen
 
 
 # muita noteja:
