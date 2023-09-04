@@ -22,6 +22,9 @@
 # demo 6
 - kameran käyttö sovelluksessa. appi, joka ottaa kuvan ja näyttää sen
 
+# demo 7
+- sqlite Ostoslista
+- dialoginappi
 
 # muita noteja:
 
