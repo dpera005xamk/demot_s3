@@ -23,7 +23,12 @@ const App : React.FC = () : React.ReactElement => {
                                                                 });
 
   const kaynnistaKamera = async () : Promise<void> => {
-
+    /*
+    
+    Videolla esitetyn getCameraPermissionsAsync -metodin sijaan lienee järkevämpää käyttää requestCameraPermissionsAsync -metodia. 
+    Joissain laitteissa get-alkuinen metodi palauttaa aikaisemmin annetun luvan (esim. iPhone "muistaa" annetun luvan sovelluskohtaisesti) 
+    kun taas request-alkuinen kysyy luvan aina uudestaan joka kerralla. Vaihda siis käyttämäsi metodi, mikäli kohtaat ongelmia. 
+    */
     const kameralupa : PermissionResponse = await Camera.getCameraPermissionsAsync();
     // saat sopivat console.log(kameralupa);
     setKuvaustiedot({ // expo go lupa kehitysvaiheessa, käännetyssä koodissa lupa sitten siihen appiin
