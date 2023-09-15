@@ -45,6 +45,10 @@ EJS:
 npm install ejs
 npm @types/ejs --save-dev
 
+myös react nativeen typet npm install @types/react-native
+jos bad gateway kun npx expo start:
+expo r -c , tyhjentää välimuistin
+
 // prisma asennus ja käyttö:
 /**
  * npm install prisma --save-dev
