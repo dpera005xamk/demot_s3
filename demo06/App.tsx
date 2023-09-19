@@ -74,7 +74,7 @@ const App : React.FC = () : React.ReactElement => {
           icon="camera" // materialdesignicon.com, jossa näkee nämä ikonit, react nativessa ei tarvii importata näitä
           label="Ota kuva"
           onPress={otaKuva}
-        />
+        /> // https://callstack.github.io/react-native-paper/docs/guides/icons/
 
         <FAB 
           style={styles.nappiSulje}
