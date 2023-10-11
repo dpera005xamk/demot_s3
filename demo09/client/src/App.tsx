@@ -17,16 +17,16 @@ const App : React.FC = () : React.ReactElement => {
 
   const haettu : React.MutableRefObject<boolean> = useRef(false);
 
-  const dispatch : AppDispatch = useDispatch();
+  const dispatch : AppDispatch = useDispatch(); // dispatch on funktio, jonka parametriksi menee funktio
 
   useEffect(() => {
 
     if (!haettu.current) {
-      dispatch(haeTehtavat());
+      dispatch(haeTehtavat()); // siinä käynnistetään thunk funktio
     }
         
     return () => { haettu.current = true }
-  }, [dispatch]);
+  }, [dispatch]); // kun toi tehdään ekaa kertaa, niin tehdään tuo
 
   return (
     <Container>
@@ -36,7 +36,7 @@ const App : React.FC = () : React.ReactElement => {
 
       <Button 
         variant="contained"
-        onClick={() => dispatch(avaaLisaysDialogi(true))}
+        onClick={() => dispatch(avaaLisaysDialogi(true))} // eli parametriksi se funktio, mikä halutaan
       >Lisää uusi tehtävä</Button>
 
       <Tehtavalista />
@@ -49,3 +49,7 @@ const App : React.FC = () : React.ReactElement => {
 }
 
 export default App;
+
+/*
+npm install react-redux @reduxjs/toolkit
+*/

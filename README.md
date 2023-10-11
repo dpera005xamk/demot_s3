@@ -26,6 +26,12 @@
 - sqlite Ostoslista
 - dialoginappi
 
+# demo 8
+- Context API, tehtävä lista.
+
+# demo 9
+- Redux, tehtävä lista.
+
 # muita noteja:
 
 Material design lite: https://getmdl.io/

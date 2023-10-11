@@ -11,6 +11,7 @@ import { useDispatch } from 'react-redux/es/exports';
 
 const Tehtavalista : React.FC = () : React.ReactElement => {
 
+  // selectorilla haetaan tila ja sieltä tuo tehtavat
   const tehtavat : Tehtava[] = useSelector((state: RootState) => state.tehtavalista.tehtavat);
 
   const dispatch : AppDispatch = useDispatch();

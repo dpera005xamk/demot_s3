@@ -4,10 +4,11 @@ import CheckBox from '@mui/icons-material/CheckBox';
 import DeleteIcon from '@mui/icons-material/Delete';
 import { IconButton, List, ListItem, ListItemIcon, ListItemText } from '@mui/material';
 import PoistaTehtava from './PoistaTehtava';
-import { Tehtava, TehtavaContext } from '../context/TehtavaContext';
+import { Tehtava, TehtavaContext } from '../context/TehtavaContext'; // tuodaan
 
 const Tehtavalista : React.FC = () : React.ReactElement => {
 
+  // tällein haetaan niitä contexteja
   const { tehtavat, setPoistoDialogi, vaihdaSuoritus } = useContext(TehtavaContext);
 
   return (
