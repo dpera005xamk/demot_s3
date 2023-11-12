@@ -92,4 +92,20 @@ expo r -c , tyhjentää välimuistin
  
  */
 
+ projektit:
+ githubissa, start project,
+ sinne tehtäviä, ja kun laitat "in progress"
+ niin convert to issue ja laita se siihen sopivaan
+ repositoryyn issueksi
+ sitten siellä repossa on se issue, kohtassa issue
+ joku voi siellä käydä klikkaa sitä ja "assignata" sen
+ itellesä, tai muille.
+ teii branch ja nimeä issue-2, kun githubissa sen issuen
+ numero on #2, hyvä nimetä samoin.
+ sitten normaalisti teet pull requesti, jonka käyt
+ tekee ja hyväksytään ja mergetään.
+ sit vaikka projekti tauluun ja siellä kanban board näkymässä.
+ projekti taulukon voi ohittaa ja käyttää vaan issueita,
+ mutta projektit yleisiä.
+
 
