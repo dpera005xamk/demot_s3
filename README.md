@@ -13,6 +13,7 @@
 
 # demo 4
 - react native, hello world
+- tässä myös buildaus.
 
 # demo 5
 - näyttää laitteen ja akun tietoja

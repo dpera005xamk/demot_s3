@@ -112,4 +112,8 @@ Expo Application Services. EAS. esim. EAS Build. niin tekee pilvessä natiivi ko
 - kun buildi valmis, niin antaa linkin, niin siitä lataa tiedoston, jonka voi siirtää puhelimeen ja käynnistää siinä.
 - voi mennä expo.dev sivulle/sovellukseen ja sinne on tullut se buildi, niin siinä on download.
 
+
+iOS builds where developmentClient is set to true on the build profile 
+should always be distributed as internal. If you are distributing for 
+TestFlight, you have to set the distribution to store.
 */
